@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 20px; /* Adicione o valor que preferir para afastar o texto da borda */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #03070c;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  top: auto;
+  left: 15%;
+  height: 100px;
+  width: 100px;
+  background: #f20044;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #f20044;
+  animation: heart 0.6s linear infinite;
+}
+
+.heart:before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart:after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #f20044;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 90px #f20044;
+}
+
+@keyframes heart {
+  0% {
+      transform: rotate(-45deg) scale(1.70);
+  }
+  80% {
+      transform: rotate(-45deg) scale(1.0); 
+  }
+  100% {
+      transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+h2.titulo {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 200px;
+  color: white;
+  font-style: italic;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+  margin-top: 10px; /* Adicione o espaçamento desejado abaixo do h2 */
+}
+h4 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-top: 600px; /* Adicione o espaçamento desejado abaixo do h2 */
+}
