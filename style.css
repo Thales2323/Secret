@@ -1,15 +1,13 @@
-body{
+body1{
     margin: 0;
     padding: 0;
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #03070c;
+    background: #0b1522;
 }
 .heart{
-    top: auto;
-    left: 15%;
     height: 70px;
     width: 70px;
     background: #f20044;
@@ -49,18 +47,27 @@ body{
         transform: rotate(-45deg) scale(0.8);
     }
 }
+body2{
+    margin: 70px;
+    padding: 400px;
+    min-height: 50px;
 
-.text{
+
+text{
     position:absolute;
-}
+    height: 0px;
+    width: 0px;
+    position: relative;
 
+}
 h1{
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     vertical-align: bottom;
-    bottom: -100px;
-    right: 100px;
+    bottom: -50px;
+    right: 50px;
     font-style: oblique;
+}
 }
